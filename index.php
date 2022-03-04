@@ -30,4 +30,31 @@ $app->get(
     }
 );
 
+$app->post(
+    '/produto', function (Request $request, Response $response, array $args) {
+        $data = $request->getParsedBody();
+        //echo '<pre>';print_r($data);die();
+        $nome = $data['nome'] ?? '';
+        return $response->getBody()->write("Produto com nome {$nome} - POST");
+    }
+);
+
+$app->put(
+    '/produto', function (Request $request, Response $response, array $args) {
+        $data = $request->getParsedBody();
+        //echo '<pre>';print_r($data);die();
+        $nome = $data['nome'] ?? '';
+        return $response->getBody()->write("Produto com nome {$nome} - PUT");
+    }
+);
+
+$app->delete(
+    '/produto', function (Request $request, Response $response, array $args) {
+        $data = $request->getParsedBody();
+        //echo '<pre>';print_r($data);die();
+        $nome = $data['nome'] ?? '';
+        return $response->getBody()->write("Produto com nome {$nome} - DELETE");
+    }
+);
+
 $app->run();
