@@ -1,0 +1,3 @@
+caso a pasta vendor nao esteja no projeto, rodar no cmd:
+composer install
+esse comando usa o composer.json para instalar os pacotes da pasta vendor.
