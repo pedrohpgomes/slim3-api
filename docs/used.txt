@@ -1,0 +1,7 @@
+
+Slim Framework 3
+Workbench (MySQL)
+Composer
+
+Mika Tuupola github https://github.com/tuupola
+ - slim-basic-auth
